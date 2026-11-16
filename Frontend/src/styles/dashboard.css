@@ -1,0 +1,329 @@
+
+/* =========================================
+   JALI MAMA - DASHBOARD HOME
+   ========================================= */
+
+/* Welcome Section */
+
+.dashboard-welcome {
+  min-height: 220px;
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background: linear-gradient(120deg, #be185d, #8b245f);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  overflow: hidden;
+}
+
+.welcome-content {
+  flex: 1;
+}
+
+.dashboard-welcome .dashboard-welcome-label {
+  color: #ffe0ec;
+}
+
+.welcomeimage {
+  width: 200px;
+  height: 210px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.dashboard-welcome h1 {
+  margin: 12px 0;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.dashboard-welcome p {
+  max-width: 550px;
+  margin: 0;
+  color: #fce7f0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Section Heading */
+
+.dashboard-section-heading {
+  margin-bottom: 20px;
+}
+
+.dashboard-section-heading h2 {
+  margin: 0 0 7px;
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dashboard-section-heading p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   HEALTH OVERVIEW CARDS
+   ========================================= */
+
+.dashboard-overview-section {
+  margin-top: 30px;
+}
+
+.dashboard-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.dashboard-overview-card {
+  min-width: 0;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 23px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 13px;
+  background: white;
+
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.dashboard-overview-card:hover {
+  transform: translateY(-4px);
+  border-color: #e9a4c1;
+  box-shadow: var(--shadow-card);
+}
+
+.overview-card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.overview-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  border-radius: 11px;
+  background: #fce7f0;
+  color: var(--color-primary);
+}
+
+.overview-status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #f8f5fa;
+  color: #746c7c;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.dashboard-overview-card h3 {
+  margin: 0 0 9px;
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.dashboard-overview-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.overview-card-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 17px;
+
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Individual Card Colours */
+
+/* Immunisation */
+.immunisation-card .overview-icon {
+  background: #eaf7ef;
+  color: #269765;
+}
+
+/* Health Tips */
+.tips-card .overview-icon {
+  background: #fff5e7;
+  color: #d58a26;
+}
+
+/* AI Assistant */
+.assistant-card .overview-icon {
+  background: #efefff;
+  color: #6774f6;
+}
+
+/* Health Resources */
+.resources-card .overview-icon {
+  background: #eaf4ff;
+  color: #3984c6;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 1100px) {
+  .dashboard-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .welcomeimage {
+    width: 170px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-welcome {
+    padding: 28px 24px;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 26px;
+  }
+
+  .welcomeimage {
+    width: 145px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-welcome {
+    padding: 25px 20px;
+    min-height: auto;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 24px;
+  }
+
+  .welcomeimage {
+    display: none;
+  }
+
+  .dashboard-overview-card {
+    min-height: 190px;
+    padding: 20px;
+  }
+
+}
+
+/* Accessibility */
+
+.dashboard-overview-card:focus-visible {
+  outline: 3px solid rgba(190, 24, 93, 0.3);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-overview-card {
+    transition: none;
+  }
+}
+/* Main card navigation */
+.dashboard-card-main-link {
+  display: block;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.dashboard-card-main-link h3 {
+  margin-top: 16px;
+}
+
+.health-tips-list {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* YouTube logo */
+.overview-icon svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Video list */
+.feature-video-list {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.feature-video-item {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.feature-video-preview {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f3f4f6;
+}
+
+.feature-video-preview iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.feature-video-item h4 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.feature-video-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+
+.tips-card{
+  font-size: 13px;
+}

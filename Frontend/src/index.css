@@ -1,0 +1,75 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292536;
+  background: #fff9fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --color-primary: #be185d;
+  --color-primary-dark: #9d174d;
+  --color-secondary: #6774f6;
+  --color-text: #292536;
+  --color-text-muted: #716d7b;
+  --color-border: #eee5eb;
+  --color-white: #ffffff;
+  --color-background-soft: #fff9fc;
+  --color-background-pink: #fff0f6;
+  --shadow-card: 0 12px 30px rgba(50, 30, 60, 0.08);
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(190, 24, 93, 0.32);
+  outline-offset: 3px;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

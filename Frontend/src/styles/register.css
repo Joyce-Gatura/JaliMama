@@ -1,0 +1,190 @@
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: var(--color-white);
+}
+
+/* LEFT BRAND PANEL */
+
+.register-brand-panel {
+  background: linear-gradient(145deg, #be185d, #8b245f);
+  color: var(--color-white);
+  padding: 45px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  color: inherit;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.register-logo-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  background: var(--color-white);
+  color: var(--color-primary);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.register-brand-content {
+  max-width: 490px;
+  margin: 60px auto;
+}
+
+.register-eyebrow {
+  color: var(--color-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.register-brand-panel .register-eyebrow {
+  color: #ffe0ec;
+}
+
+.register-brand-content h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.register-brand-content > p {
+  color: #fce7f0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.register-benefits {
+  display: grid;
+  gap: 19px;
+  margin-top: 35px;
+}
+
+.register-benefits div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.benefit-check {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.register-brand-footer {
+  color: #fce7f0;
+  font-size: 13px;
+}
+
+/* RIGHT CONTENT */
+
+.register-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 30px;
+}
+
+.register-form-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.register-heading {
+  margin-bottom: 28px;
+}
+
+.register-heading h2 {
+  color: var(--color-text);
+  font-size: 32px;
+  margin: 12px 0 8px;
+}
+
+.register-heading p {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.register-login-prompt {
+  text-align: center;
+  margin-top: 25px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.register-login-prompt a {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-login-prompt a:hover {
+  text-decoration: underline;
+}
+
+.register-security-note {
+  margin-top: 25px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.register-mobile-brand {
+  display: none;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+  .register-page {
+    grid-template-columns: 1fr;
+  }
+
+  .register-brand-panel {
+    display: none;
+  }
+
+  .register-content {
+    padding: 35px 22px;
+    align-items: flex-start;
+  }
+
+  .register-mobile-brand {
+    display: block;
+    margin-bottom: 45px;
+  }
+
+  .register-mobile-brand .register-logo {
+    color: var(--color-primary);
+  }
+}
+
+@media (max-width: 480px) {
+  .register-content {
+    padding: 25px 18px;
+  }
+
+  .register-heading h2 {
+    font-size: 27px;
+  }
+}

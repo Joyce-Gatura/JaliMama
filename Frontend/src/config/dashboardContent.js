@@ -41,6 +41,7 @@ export const dashboardFeatures = [
     title: "Ask Jali Mama",
     description:
       "Get helpful maternal and child health information from your AI assistant.",
+    image: "/images/ai1.png",
     icon: MessageCircle,
     status: "AI Support",
     linkText: "Start a conversation",
@@ -50,7 +51,7 @@ export const dashboardFeatures = [
   {
     title: "Health Tips & Priorities 4 You",
     tips: [
-      "Attend at least 8 antenatal care contacts.",
+      "Attend at least 4 antenatal visit during pregnancy.",
       "Plan to give birth at a health facility.",
       "Keep track of your baby's movements.",
       "Get enough rest and sleep.",
@@ -79,7 +80,7 @@ export const healthVideos = [
   {
     id: 1,
     title: "Maternal and Child Health Education",
-    dashboardTitle: "Nutrition During Pregnancy",
+    // dashboardTitle: "Nutrition During Pregnancy",
     description: "Best food for a healthy pregnancy.",
     videoId: "tBuj99QV10g",
     showOnDashboard: true,

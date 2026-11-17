@@ -1,9 +1,9 @@
 /* ---------- Global landing page styles ---------- */
 
 .landing-page {
-  --primary: #be185d;
-  --primary-dark: #9d174d;
-  --secondary: #6774f6;
+  --primary: var(--color-primary);
+  --primary-dark: var(--color-primary-dark);
+  --secondary: var(--color-secondary);
   --text: #292536;
   --muted: #716d7b;
   --surface: #ffffff;
@@ -134,7 +134,7 @@
 }
 
 .button-outline:hover {
-  background: #fff0f6;
+  background: var(--color-background-pink);
 }
 
 .button-light {
@@ -144,7 +144,7 @@
 }
 
 .button-light:hover {
-  background: #fff0f6;
+  background: var(--color-background-pink);
 }
 
 .nav-register {
@@ -224,7 +224,11 @@
   display: grid;
   place-items: center;
   border-radius: 35px;
-  background: linear-gradient(140deg, #fff0f6, #f0efff);
+  background: linear-gradient(
+    140deg,
+    var(--color-background-pink),
+    var(--color-secondary-subtle)
+  );
   overflow: hidden;
 }
 
@@ -236,14 +240,14 @@
 .hero-circle-one {
   width: 300px;
   height: 300px;
-  background: #f9c9df;
+  background: var(--color-primary-soft);
   opacity: 0.65;
 }
 
 .hero-circle-two {
   width: 230px;
   height: 230px;
-  background: #d9d9ff;
+  background: var(--color-secondary-soft);
   opacity: 0.65;
   transform: translate(75px, 75px);
 }
@@ -393,7 +397,7 @@
   border-radius: 13px;
   display: grid;
   place-items: center;
-  background: #fff0f6;
+  background: var(--color-background-pink);
   font-size: 26px;
 }
 
@@ -454,7 +458,11 @@
   margin: 80px auto;
   padding: 45px 50px;
   border-radius: 18px;
-  background: linear-gradient(120deg, #be185d, #6774f6);
+  background: linear-gradient(
+    120deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -463,7 +471,7 @@
 }
 
 .cta-section .section-eyebrow {
-  color: #ffe0ed;
+  color: var(--color-primary-highlight);
 }
 
 .cta-section h2 {
@@ -476,7 +484,7 @@
 .cta-section p {
   max-width: 620px;
   margin-bottom: 0;
-  color: #fff0f6;
+  color: var(--color-background-pink);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -592,8 +600,8 @@
   display: grid;
   place-items: center;
   border-radius: 12px;
-  background: #fff0f6;
-  color: #be185d;
+  background: var(--color-background-pink);
+  color: var(--color-primary);
   font-size: 21px;
 }
 
@@ -611,7 +619,7 @@
 }
 
 .contact-item a:hover {
-  color: #be185d;
+  color: var(--color-primary);
 }
 
 .contact-form {
@@ -654,7 +662,7 @@
 
 .contact-form-group input:focus,
 .contact-form-group textarea:focus {
-  border-color: #be185d;
+  border-color: var(--color-primary);
 }
 
 .contact-form-group textarea {

@@ -10,8 +10,15 @@ function DashboardOverviewCard({ feature, pregnancy = null, videos = [] }) {
 
   return (
     <article
+    
+    
+
+
+
       className={`dashboard-overview-card ${feature.className}`}
     >
+
+      
       <div className="overview-card-header">
         <div className="overview-icon">
           {Icon && <Icon size={22} />}
@@ -19,6 +26,25 @@ function DashboardOverviewCard({ feature, pregnancy = null, videos = [] }) {
 
         <span className="overview-status">{feature.status}</span>
       </div>
+
+
+      {feature.image && (
+  <div className="overview-card-image">
+    <img
+      src={feature.image}
+      alt={`${feature.title} illustration`}
+      loading="lazy"
+    />
+  </div>
+)}
+
+     
+
+
+
+
+
+
 
       {feature.showPregnancyProgress ? (
         <Suspense
@@ -45,6 +71,9 @@ function DashboardOverviewCard({ feature, pregnancy = null, videos = [] }) {
                   {feature.tips.map((tip) => (
                     <li key={tip}>{tip}</li>
                   ))}
+
+
+
                 </ul>
                 <p className="feature-data-disclaimer">
                   General education only. Confirm care guidance with a

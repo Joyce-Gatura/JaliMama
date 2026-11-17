@@ -94,7 +94,7 @@
 }
 
 .sidebar-link.active {
-  background: #fce7f0;
+  background: var(--color-primary-soft);
   color: var(--color-primary);
   font-weight: 700;
 }

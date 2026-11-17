@@ -52,7 +52,7 @@ function PregnancyProgress({ lastMenstrualPeriod }) {
     <section className="pregnancy-progress-card">
       {/* Heading */}
    <h2 className="feature-section-title">
-  Your Pregnancy Progress
+  My Pregnancy Progress
 </h2>
 
       <div className="pregnancy-progress-layout">
@@ -78,8 +78,8 @@ function PregnancyProgress({ lastMenstrualPeriod }) {
                 paddingAngle={0}
                 isAnimationActive={true}
               >
-                <Cell fill="#be185d" />
-                <Cell fill="#f9dce9" />
+                <Cell fill="var(--color-primary)" />
+                <Cell fill="var(--color-primary-soft)" />
               </Pie>
 
               <Tooltip

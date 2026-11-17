@@ -43,8 +43,8 @@
 
 .facility-filter select:focus,
 .facility-search-input:focus-within {
-  border-color: #be185d;
-  box-shadow: 0 0 0 3px rgba(190, 24, 93, 0.09);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgb(190 24 93 / 9%);
 }
 
 .facility-filter select:disabled {
@@ -74,8 +74,8 @@
 
 .facility-count {
   padding: 7px 12px;
-  color: #be185d;
-  background: #fce7f3;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
   border-radius: 20px;
   font-size: 13px;
   font-weight: 650;
@@ -118,8 +118,8 @@
   place-items: center;
   width: 48px;
   height: 48px;
-  color: #be185d;
-  background: #fce7f3;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
   border-radius: 12px;
 }
 

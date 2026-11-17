@@ -5,15 +5,23 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 
-  --color-primary: #be185d;
-  --color-primary-dark: #9d174d;
-  --color-secondary: #6774f6;
+  --color-primary: #BE185D;
+  --color-primary-dark: #9D174D;
+  --color-primary-light: #DB2777;
+  --color-primary-soft: #FCE7F3;
+  --color-primary-highlight: #FFE0ED;
+  --color-primary-subtle: #FFF8FB;
+  --color-secondary: #3B82F6;
+  --color-secondary-dark: #1D4ED8;
+  --color-secondary-light: #60A5FA;
+  --color-secondary-soft: #DBEAFE;
+  --color-secondary-subtle: #EFF6FF;
   --color-text: #292536;
   --color-text-muted: #716d7b;
   --color-border: #eee5eb;
   --color-white: #ffffff;
   --color-background-soft: #fff9fc;
-  --color-background-pink: #fff0f6;
+  --color-background-pink: #FFF0F6;
   --shadow-card: 0 12px 30px rgba(50, 30, 60, 0.08);
   --radius-sm: 8px;
   --radius-lg: 16px;
@@ -54,7 +62,7 @@ a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 3px solid rgba(190, 24, 93, 0.32);
+  outline: 3px solid rgb(190 24 93 / 32%);
   outline-offset: 3px;
 }
 

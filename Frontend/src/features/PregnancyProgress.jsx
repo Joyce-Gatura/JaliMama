@@ -16,26 +16,16 @@ function PregnancyProgress({ lastMenstrualPeriod }) {
   const pregnancy = getPregnancyDetails(lastMenstrualPeriod);
 
   // Display setup message when pregnancy information is unavailable.
-  if (!pregnancy) {
-    return (
-      <section className="pregnancy-progress-card">
-        <h2 className="pregnancy-progress-title">
-          Your Pregnancy Progress
-        </h2>
-
-        <div className="pregnancy-empty-state">
-          {/* <p>
-            Add your last menstrual period (LMP) date to
-            calculate your pregnancy progress.
-          </p> */}
-
-          <Link to="/dashboard/pregnancy">
-            Set up pregnancy details →
-          </Link>
-        </div>
-      </section>
-    );
-  }
+ if (!pregnancy) {
+  return (
+    <div className="pregnancy-empty-state">
+      <p>
+        Your pregnancy progress will appear here
+        once you add your pregnancy details.
+      </p>
+    </div>
+  );
+}
 
   const chartData = [
     {
@@ -49,11 +39,7 @@ function PregnancyProgress({ lastMenstrualPeriod }) {
   ];
 
   return (
-    <section className="pregnancy-progress-card">
-      {/* Heading */}
-   <h2 className="feature-section-title">
-  My Pregnancy Progress
-</h2>
+    <section className="feature-panel pregnancy-progress-card">
 
       <div className="pregnancy-progress-layout">
         {/* Doughnut Chart */}

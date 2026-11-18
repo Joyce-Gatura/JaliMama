@@ -27,11 +27,11 @@ function PregnancyTracker() {
     >
       <div className="feature-content-stack">
         <section className="feature-panel">
-          {/* <h2>Pregnancy date estimate</h2>
+          <h2>Pregnancy date estimate</h2>
           <p>
             This calculator is for information only. A healthcare
             provider's confirmed dating should take precedence.
-          </p> */}
+          </p>
           <form className="feature-form" onSubmit={handleSubmit}>
             <InputField
               id="last-menstrual-period"
@@ -53,10 +53,10 @@ function PregnancyTracker() {
           <PregnancyProgress lastMenstrualPeriod={calculationDate} />
         )}
 
-        {/* <p className="feature-data-disclaimer">
+        <p className="feature-data-disclaimer">
           This estimate is held only in this page's temporary state. It is
           not saved to an account or shared with a provider.
-        </p> */}
+        </p>
       </div>
     </FeaturePage>
   );
